@@ -1,0 +1,285 @@
+body {
+    margin: 0;
+    background: #DEEFE7;
+    font-family: 'Roboto', sans-serif;
+
+    font-size: 25px;
+    line-height: 1.6;
+    color: #002333;
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/* Container */
+.container {
+    /*position: relative;*/
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Intro */
+.intro {
+    width: 100%;
+    height: 100vh;
+
+    background: url("../images/intro.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.intro__inner {
+    width: 100%;
+    max-width: 880px;
+    margin: 0;
+
+    padding-top: 150px;
+}
+
+.intro__title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+
+    line-height: 1;
+}
+
+.intro__title:after {
+    content: "";
+    display: block;
+    width: 300px;
+    height: 1.5px;
+    margin: 15px 0 0;
+
+    background: #89d99d;
+}
+
+.intro__subtitle {
+    font-size: 21px;
+    font-weight: 400;
+    color: #B4BEC9;
+
+    text-transform: uppercase;
+    padding-top: 15px;
+}
+
+
+
+/* Header */
+.header {
+    width: 100%;
+    padding-top: 50px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #89d99d;
+}
+
+
+/* Nav */
+.nav {
+    padding-right: 300px;
+
+    font-size: 21px;
+    /*text-transform: uppercase;*/
+
+}
+
+.nav__link {
+    direction: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+
+    color: #fff;
+    text-decoration: none;
+
+    transition: color .2s linear;
+}
+
+.nav__link:hover {
+    color: #89d99d;
+}
+
+
+/* Calc Section */
+
+/*.container {
+    max-width: 1200px;
+    width: 100%;
+    height: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}*/
+
+.calc-wrapper {
+    margin-top: 40px;
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    height: 650px;
+   position: absolute;
+  
+}
+
+.form {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(137, 217, 157, 0.5);
+    border-radius: 25px;
+    padding: 30px;
+}
+
+
+.form1 {
+    flex-basis: 650px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    margin-right: 50px;
+}
+
+.form2 {
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.form .form__item {
+	background-color: rgba(250, 250, 250, 0.5);
+	border-radius: 15px;
+	padding: 10px;
+    margin-bottom: 15px;
+		font-size: 18px;
+}
+
+.form .heading {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #1a1a43;
+}
+
+#count {
+    -webkit-appearance: none;
+    width: 500px;
+    height: 5px;
+    background-color: #89d99d;
+    border-radius: 20px;
+    outline: none;
+}
+
+#volume {
+    font-size: 30px;
+    margin-left: 30px;
+    color: #1a1a43;
+}
+
+.switcher {
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+}
+
+#count::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, .2);
+}
+
+.option__item {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+
+}
+
+.option__item input {
+    display: none;
+}
+
+.option__item .checkmark {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #89d99d;
+    margin-right: 15px;
+    cursor: pointer;
+    position: relative;
+}
+
+.option__item .checkmark::after {
+    display: none;
+    position: absolute;
+    content: '';
+    width: 12px;
+    height: 12px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+}
+
+.option__item input:checked + .checkmark::after {
+    display: block;
+}
+
+.form2 .order {
+    margin-bottom: 15px;
+}
+
+.form2 .order output {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.form2 .order::after {
+    content: "\20BD";
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
